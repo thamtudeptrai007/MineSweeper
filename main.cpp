@@ -266,11 +266,11 @@ int drawSelectLevel()
         }
         if(e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE) break;
         drawBackGround();
-        f.renderTexture(f.welcome, 150, 0, 1190, 230);
+        
         //f.renderTextureFont(f.ExitO, 0, 650, 50, 50);
         renderTextureFont("Exit", "Font/font.ttf", 50, f.Orange, 0, 650, 50, 50);
 
-        //f.renderTexture(f.choose, 150, 0, 1190, 230);
+        f.renderTexture(f.choose, 150, 0, 1190, 230);
         renderTextureFont("Thanh Hung", "Font/thanhhung.otf", 50, f.Orange, 1070, 10, 230, 50);
         //f.renderTextureFont(f.ThanhHungO, 1070, 10, 230, 50);
 
